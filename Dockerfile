@@ -1,4 +1,4 @@
-FROM ubuntu:<TAG>
+FROM ubuntu:14.10
 MAINTAINER densuke
 
 # 日付周りを日本語向けに変更します
