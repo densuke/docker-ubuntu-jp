@@ -18,7 +18,7 @@ RUN [ ! -x /usr/bin/wget ] && apt-get update && \
 		touch /.get-wget
 RUN wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | apt-key add - && \
     wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | apt-key add - && \
-		wget https://www.ubuntulinux.jp/sources.list.d/utopic.list -O- | sed -e 's;utopic;velvet;g' >  /etc/apt/sources.list.d/ubuntu-ja.list
+		wget https://www.ubuntulinux.jp/sources.list.d/utopic.list -O- | sed -e 's;utopic;vivid;g' >  /etc/apt/sources.list.d/ubuntu-ja.list
 
 # システムを更新します
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade -y
